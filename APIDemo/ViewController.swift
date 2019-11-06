@@ -43,16 +43,7 @@ class ViewController: UIViewController {
             
             
             
-//            // 2b. Get a key from the JSON object
-//            let origin = jsonResponse["origin"]
-//            let host = jsonResponse["headers"]["Host"]
-//
-//            // 2c. Output the value to screen
-//            print("Your IP Address: \(origin)")
-//            print("Host: \(host)")
-//
-//            // 3. Show the data in the user interface
-//            self.outputLabel.text = "IP Address: \(origin)"
+//           
         }
     }
 
@@ -60,6 +51,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 
 
 }
