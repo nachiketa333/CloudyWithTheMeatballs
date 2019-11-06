@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="APIDemo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Watch App" id="x5x-MS-41c"/>
+                        <button width="1" alignment="left" title="Get Data" id="oFp-PR-3wU">
+                            <connections>
+                                <action selector="getDataPressed" destination="AgC-eL-Hgc" id="Y7m-Nn-eSi"/>
+                            </connections>
+                        </button>
+                        <label width="136" alignment="left" text="Humidity" id="l12-Sb-WkN"/>
+                        <label width="132" alignment="left" text="Temperature" id="jxe-0u-Iet"/>
+                        <label alignment="left" text="Precipitation" id="DyG-ga-cRA"/>
+                        <label width="136" alignment="left" text="Time" id="qXa-v1-sga"/>
+                    </items>
+                    <connections>
+                        <outlet property="precipiLabel" destination="DyG-ga-cRA" id="gA4-gN-DXT"/>
+                        <outlet property="tempLabel" destination="jxe-0u-Iet" id="mc6-1K-GpW"/>
+                        <outlet property="timeLabel" destination="qXa-v1-sga" id="Kkf-cb-Z3n"/>
+                        <outlet property="watchOutputLabel" destination="l12-Sb-WkN" id="sdF-fb-v3Z"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
